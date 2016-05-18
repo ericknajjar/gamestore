@@ -2,7 +2,21 @@ class GamesController < ApplicationController
   def new
 
   end
+
   def create
-    render plain: params[:game].inspect
+    @game = Game.new(game_params)
+
+    @game.save
+    redirect_to @game
   end
+
+  def show
+    @game = Game.find(params[:id])
+  end
+
+  private
+  def game_params
+    params.require(:game).permit(:name, :boxShot,:category,:released,:engDescription)
+  end
+
 end

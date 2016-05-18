@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  engDescription: MyString
+  ptDescription: MyString
+  released: false
+  category: MyString
+  boxshot: MyString
+  sku: 
+
+two:
+  name: MyString
+  engDescription: MyString
+  ptDescription: MyString
+  released: false
+  category: MyString
+  boxshot: MyString
+  sku: 
