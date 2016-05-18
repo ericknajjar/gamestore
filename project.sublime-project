@@ -1,0 +1,18 @@
+{
+  
+    "folders":
+    [
+        {
+            "path": "./",
+            "folder_exclude_patterns": [],
+            "follow_symlinks": true
+        }
+    ],
+    "build_systems":
+    [
+        {
+            "name": "Run",
+            "shell_cmd": "rails server"
+        }
+    ]
+}

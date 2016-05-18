@@ -1,0 +1,34 @@
+<%= form_for :game, url: games_path do |g| %>
+  <p>
+    <%= g.label :name %><br>
+    <%= g.text_field :name %>
+  </p>
+
+  <p>
+    <%= g.label :boxShot %><br>
+    <%= g.text_field :boxShot %>
+  </p>
+
+  <p>
+    <%= g.label :category %>
+    <%= g.text_field :category %>
+  </p>
+
+  <p>
+    <%= g.label :released %>
+    <%= g.check_box :released %>
+  </p>
+
+  <p>
+    <%= g.label :description %><br>
+    <%= g.text_area :description %>
+  </p>
+
+  
+
+
+ 
+  <p>
+    <%= g.submit %>
+  </p>
+<% end %>
