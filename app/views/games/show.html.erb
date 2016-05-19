@@ -1,9 +1,39 @@
+<p id="notice"><%= notice %></p>
+
 <p>
   <strong>Name:</strong>
   <%= @game.name %>
 </p>
- 
+
 <p>
-  <strong>Description:</strong>
-  <%= @game.engDescription %>
+  <strong>English description:</strong>
+  <%= @game.english_description %>
 </p>
+
+<p>
+  <strong>Portuguese description:</strong>
+  <%= @game.portuguese_description %>
+</p>
+
+<p>
+  <strong>Boxshot:</strong>
+  <%= @game.boxshot %>
+</p>
+
+<p>
+  <strong>Released:</strong>
+  <%= @game.released %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @game.sku %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @game.category %>
+</p>
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

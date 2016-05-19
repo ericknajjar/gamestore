@@ -11,17 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160518205917) do
+ActiveRecord::Schema.define(version: 20160519172603) do
 
-  create_table "games", force: true do |t|
+  create_table "categories", force: true do |t|
     t.string   "name"
-    t.string   "engDescription"
-    t.string   "ptDescription"
-    t.boolean  "released"
-    t.string   "category"
-    t.string   "boxshot"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "games", primary_key: "sku", force: true do |t|
+    t.string   "name"
+    t.string   "english_description"
+    t.text     "portuguese_description"
+    t.string   "boxshot"
+    t.boolean  "released"
+    t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "games", ["category_id"], name: "index_games_on_category_id"
 
 end

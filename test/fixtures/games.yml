@@ -2,18 +2,18 @@
 
 one:
   name: MyString
-  engDescription: MyString
-  ptDescription: MyString
-  released: false
-  category: MyString
+  english_description: MyString
+  portuguese_description: MyText
   boxshot: MyString
+  released: false
   sku: 
+  category_id: 
 
 two:
   name: MyString
-  engDescription: MyString
-  ptDescription: MyString
-  released: false
-  category: MyString
+  english_description: MyString
+  portuguese_description: MyText
   boxshot: MyString
+  released: false
   sku: 
+  category_id: 

@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
 
-  resources :games
+scope "/admin" do
+  resources :games, param: :sku
+end
 
-  root 'welcome#index'
+  root 'games#list'
+
+scope "/site" do
+  get '/', to: 'games#list'
+  get '/show/:sku', to: 'games#show'
+end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
