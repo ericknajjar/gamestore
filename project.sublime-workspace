@@ -7,6 +7,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/games/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 919,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/games/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 586,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/games/list.html.erb",
+			"settings":
+			{
+				"buffer_size": 709,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/games/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 1040,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1539,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -45,10 +85,38 @@
 	},
 	"expanded_folders":
 	[
-		"/home/isadora/Erick/gamestore"
+		"/home/erick/Projects/gamestore",
+		"/home/erick/Projects/gamestore/app",
+		"/home/erick/Projects/gamestore/app/assets",
+		"/home/erick/Projects/gamestore/app/controllers",
+		"/home/erick/Projects/gamestore/app/controllers/concerns",
+		"/home/erick/Projects/gamestore/app/models",
+		"/home/erick/Projects/gamestore/app/views",
+		"/home/erick/Projects/gamestore/app/views/games",
+		"/home/erick/Projects/gamestore/app/views/layouts",
+		"/home/erick/Projects/gamestore/config",
+		"/home/erick/Projects/gamestore/db/migrate"
 	],
 	"file_history":
 	[
+		"/home/erick/Projects/gamestore/app/controllers/application_controller.rb",
+		"/home/erick/Projects/gamestore/app/views/layouts/application.html.erb",
+		"/home/erick/Projects/gamestore/app/views/games/edit.html.erb",
+		"/home/erick/Projects/gamestore/app/controllers/games_controller.rb",
+		"/home/erick/Projects/gamestore/app/models/category.rb",
+		"/home/erick/Projects/gamestore/app/models/game.rb",
+		"/home/erick/Projects/gamestore/app/models/.keep",
+		"/home/erick/Projects/gamestore/db/migrate/20160519172603_create_games.rb",
+		"/home/erick/Projects/gamestore/db/migrate/20160519172142_create_categories.rb",
+		"/home/erick/Projects/gamestore/db/schema.rb",
+		"/home/erick/Projects/gamestore/db/development.sqlite3",
+		"/home/erick/Projects/gamestore/config/routes.rb",
+		"/home/erick/Projects/gamestore/app/views/games/list.html.erb",
+		"/home/erick/Projects/gamestore/app/views/games/show.html.erb",
+		"/home/erick/Projects/gamestore/app/views/games/new.html.erb",
+		"/home/erick/Projects/gamestore/app/views/games/_form.html.erb",
+		"/home/erick/Projects/gamestore/db/seeds.rb",
+		"/home/erick/Projects/gamestore/db/test.sqlite3",
 		"/home/isadora/Erick/gamestore/project.sublime-workspace",
 		"/home/isadora/Erick/gamestore/project.sublime",
 		"/home/isadora/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings"
@@ -86,8 +154,159 @@
 	"groups":
 	[
 		{
+			"selected": 3,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/games/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 919,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								271,
+								271
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/games/show.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 586,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/games/list.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 709,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								650,
+								650
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/games/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1539,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								532,
+								532
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -97,7 +316,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{
@@ -168,7 +387,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 299.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

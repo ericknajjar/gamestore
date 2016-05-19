@@ -1,5 +1,7 @@
 class GamesController < ApplicationController
+  before_filter :authorize, :except => [:show,:list]
   before_action :set_game, only: [:show, :edit, :update, :destroy]
+
 
   # GET /games
   # GET /games.json

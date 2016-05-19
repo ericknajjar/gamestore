@@ -9,4 +9,5 @@
 action = Category.create({name:'Action'})
 terror = Category.create({name:'Terror'})
 adventure = Category.create({name:'Adventure'})
+admin = User.create({name: 'admin',email:'admin@admin.com',password:'admin',password_confirmation:'admin'})
 fps = Category.create({name:'Fps'})
