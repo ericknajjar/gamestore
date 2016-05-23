@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_filter :authorize, :except => [:show,:list]
+  before_filter :authorize, :except => [:show,:index]
   before_action :set_game, only: [:show, :edit, :update, :destroy]
 
 
@@ -14,9 +14,6 @@ class GamesController < ApplicationController
   def show
   end
 
-  def list
-     @games = Game.all
-  end
 
   # GET /games/new
   def new
