@@ -1,5 +1,5 @@
 class GamesController < ApplicationController
-  before_filter :authorize, :except => [:show,:index]
+  before_filter :authorize, :except => [:show]
   before_action :set_game, only: [:show, :edit, :update, :destroy]
 
 

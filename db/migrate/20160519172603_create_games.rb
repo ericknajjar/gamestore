@@ -11,5 +11,6 @@ class CreateGames < ActiveRecord::Migration
 
       t.timestamps
     end
+
   end
 end
