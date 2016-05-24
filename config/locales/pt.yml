@@ -1,0 +1,9 @@
+pt:
+  search: "Procurar" 
+  find: "Encontrar"
+  title: "FooStore - Loja de Jogos"
+  password: "Senha"
+  submit: "Enviar"
+  back: "Voltar"
+  description: "Descrição"
+  boxshot: "Capa"

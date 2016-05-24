@@ -1,44 +1,52 @@
 
 
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @game.name %>
-</p>
+  <div class="row">
 
-<p>
-  <strong>English description:</strong>
-  <%= @game.english_description %>
-</p>
+    <div class="col-sm-6">
+      <%= image_tag(@game.boxshot,class: 'img-responsive img-rounded')%>
+    </div>
 
-<p>
-  <strong>Portuguese description:</strong>
-  <%= @game.portuguese_description %>
-</p>
+    <div class="col-sm-6">
+    <p>
+      <strong>Name:</strong>
+      <%= @game.name %>
+    </p>
 
-<p>
-  <strong>Boxshot:</strong>
-  <%= @game.boxshot %>
-</p>
+    <p>
+      <strong><%= t :description%></strong>
+        <%if cookies[:locale] == 'pt'%>
+         <%= @game.portuguese_description %>
+        <%else%>
+          <%= @game.english_description %>
+        <%end%>
+    </p> 
 
-<p>
-  <strong>Released:</strong>
-  <%= @game.released %>
-</p>
+    <p>
+      <strong>Released:</strong>
+      <%= @game.released %>
+    </p>
 
-<p>
-  <strong>Sku:</strong>
-  <%= @game.sku %>
-</p>
+    <p>
+      <strong>Sku:</strong>
+      <%= @game.sku %>
+    </p>
 
-<p>
-  <strong>Category:</strong>
-  <%= @game.category %>
-</p>
+    <p>
+      <strong>Category:</strong>
+      <%= Category.find(@game.category).name %>
+    </p>
 
-<% if is_admin? %>
-  <%= link_to 'Edit', edit_game_path(@game) %> 
-<%end%>
+    <% if is_admin? %>
+      <%= link_to 'Edit', edit_game_path(@game) %> 
+    <%end%>
+    <%= link_to 'Back', :back %>
+  </div>
 
-<%= link_to 'Back', :back %>
+</div>
+  
+  
+</div>
+
+

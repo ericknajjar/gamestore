@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Gamestore</title>
+  <title><%=t(:title)%></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -48,6 +48,9 @@
           <%= link_to 'Login', { controller: "sessions", action: "create" }%>
         </p>
       <% end %>
+        
+     <%= link_to image_tag("brazilian_flag.gif"), url_for(params.merge({:locale => 'pt'}))  %>
+     <%= link_to image_tag("american_flag.png"),url_for(params.merge({:locale => 'en'})) %>
 
       <%= link_to 'FooStore', { controller: "site", action: "index" }, class: 'navbar-brand' %>
 
