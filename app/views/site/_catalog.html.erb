@@ -1,24 +1,36 @@
+<div class="container">
+
 <nav class="navbar">
   <div id="navbar" class="navbar-collapse collapse">
 
-  <%= form_tag("/site", method: "get", class:"navbar-form navbar-left", role:"search") do %>
-    <%= text_field_tag(:q,"",class:"form-control", placeholder: t(:search)) %>
+  <%= form_tag("/site", method: "get", class:"navbar-form navbar-left", role:"search") do%>
+    <%= text_field_tag(:q,@query,class:"form-control", placeholder: t(:search)) %>
+    <%= collection_select :category,:category_id, Category.order(:name),:id,:translated_name, {:include_blank  => t(:none),:selected => @category_id}%>
     <%= submit_tag(t(:find), class:"btn btn-default") %>
-  <% end %>
+
+  <%end%>
+
+
   </div>
 
 </nav>
-
-<div class="container">
-
-	<% @games.each do |game| %>
-	<div class="row">
-	    <div class="col-md-3">
-	    	<%= link_to image_tag(game.boxshot,class: 'img-responsive img-rounded'), game %>
-	    </div>
-	<%end%>
-	</div> <!--row-->
-
+  
+   <% i = 0 
+    @games.each do |game|
+   %>
+    <%if i%3 == 0%>
+  	   <div class="row">
+    <%end%>
+  	    <div class="col-md-4">
+  	    	<%= link_to image_tag(game.boxshot,class: 'img-responsive img-rounded'), game %>
+  	    </div>
+    <% if i%3 == 2%>
+  	 </div> 
+     <br/>
+    <%end%>
+    <% i = i+1%>
+   <%end%>
+ 
 </div>
 
 

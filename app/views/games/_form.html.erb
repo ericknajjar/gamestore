@@ -12,28 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label t(:name) %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :english_description %><br>
-    <%= f.text_field :english_description %>
+    <%= f.label t(:english_description) %><br>
+    <%= f.text_area :english_description %>
   </div>
   <div class="field">
-    <%= f.label :portuguese_description %><br>
+    <%= f.label t(:portuguese_description) %><br>
     <%= f.text_area :portuguese_description %>
   </div>
   <div class="field">
-    <%= f.label :boxshot %><br>
+    <%= f.label t(:boxshot) %><br>
     <%= f.text_field :boxshot %>
   </div>
   <div class="field">
-    <%= f.label :released %><br>
+    <%= f.label t(:released) %><br>
     <%= f.check_box :released %>
   </div>
   <div class="field">
-    <%= f.label :category_id %><br>
-    <%= f.collection_select :category_id, Category.order(:name),:id,:name, include_blank: false %>
+    <%= f.label t(:category) %><br>
+    <%= f.collection_select :category_id, Category.order(:name),:id,:translated_name, include_blank: false %>
   </div>
   <div class="actions">
     <%= f.submit %>

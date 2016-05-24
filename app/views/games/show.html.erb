@@ -10,12 +10,12 @@
 
     <div class="col-sm-6">
     <p>
-      <strong>Name:</strong>
+      <strong><%= t(:name)+':'%></strong>
       <%= @game.name %>
     </p>
 
     <p>
-      <strong><%= t :description%></strong>
+      <strong><%= t(:description)+':'%></strong>
         <%if cookies[:locale] == 'pt'%>
          <%= @game.portuguese_description %>
         <%else%>
@@ -23,25 +23,26 @@
         <%end%>
     </p> 
 
-    <p>
-      <strong>Released:</strong>
-      <%= @game.released %>
-    </p>
-
-    <p>
-      <strong>Sku:</strong>
-      <%= @game.sku %>
-    </p>
-
-    <p>
-      <strong>Category:</strong>
-      <%= Category.find(@game.category).name %>
-    </p>
-
     <% if is_admin? %>
-      <%= link_to 'Edit', edit_game_path(@game) %> 
+      <p>
+        <strong><%= t(:released)+':'%></strong>
+        <%= t(@game.released.to_s) %>
+      </p>
+
+      <p>
+        <strong>Sku:</strong>
+        <%= @game.sku %>
+      </p>
+
+      <p>
+        <strong><%= t(:category)+':'%></strong>
+        <%= Category.find(@game.category).translated_name %>
+      </p>
+
+    
+      <%= link_to t(:edit), edit_game_path(@game), class: "btn-primary" %> 
     <%end%>
-    <%= link_to 'Back', :back %>
+   
   </div>
 
 </div>

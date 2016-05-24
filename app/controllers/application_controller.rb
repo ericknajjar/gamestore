@@ -32,8 +32,7 @@ class ApplicationController < ActionController::Base
     else
       use_locale_from_cookie
     end
-
-    puts 'locale: '+params[:locale].to_s
+    
   end
   
 

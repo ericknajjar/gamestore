@@ -1,5 +1,8 @@
-<%= render 'list' %>
 
-<% if is_admin? %>
-<%= link_to 'New Game', new_game_path %>
-<% end %>
+<div class="container">
+  <%= render 'list' %>
+
+  <% if is_admin? %>
+  <%= link_to t(:new_game), new_game_path, class: "btn-primary" %>
+  <% end %>
+</div>
