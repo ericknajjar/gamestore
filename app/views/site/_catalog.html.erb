@@ -1,0 +1,15 @@
+<div class="container">
+
+	<% @games.each do |game| %>
+	<div class="row">
+	    <div class="col-md-3">
+	    	<%= link_to image_tag(game.boxshot,class: 'img-responsive img-rounded'), game %>
+	    </div>
+	<%end%>
+	</div> <!--row-->
+
+</div>
+
+
+
+ <!-- -->

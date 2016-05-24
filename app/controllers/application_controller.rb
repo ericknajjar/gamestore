@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   end
 
   def is_admin?
-    current_user.blank?
+    !current_user.blank?
   end
 
 end

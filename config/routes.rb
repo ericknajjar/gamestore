@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 scope "/admin" do
   resources :games, param: :sku
-  #get '/' => 'games#index'
+  get '/' => 'games#index'
   #get '/newgame' => 'games#new'
   #post '/creategame' => 'games#create'
   #get '/game/:sku/edit' => 'games#edit'
@@ -11,12 +11,14 @@ scope "/admin" do
 
 end
 
-  root 'games#index'
+  root :to => redirect("/site")
 
-scope "/site" do
-  get '/' => 'games#index'
-  get '/game/:sku' => 'games#show'
-end
+  get '/site' => 'site#index'
+
+##scope "/site" do
+ # get '/' => 'games#index'
+ # get '/game/:sku' => 'games#show'
+#end
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
